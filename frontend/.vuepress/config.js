@@ -1,4 +1,5 @@
 const { description } = require('../../package')
+const webpack = require('webpack')
 
 module.exports = {
   /**
@@ -66,5 +67,15 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
-  ]
+  ],
+
+  configureWebpack: (config) => { 
+    return {
+
+     plugins:
+      [
+        new webpack.EnvironmentPlugin({ ...process.env })
+      ]
+    }
+  }
 }
