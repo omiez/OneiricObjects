@@ -18,12 +18,12 @@
     "@apollo/client": "^3.2.5",
     "react": "^16.14.0",
     "vue-apollo": "^3.0.5",
+    "node-fetch": "^2.6.1",
     "graphql": "^15.3.0"
   },
   "devDependencies": {
     "vuepress": "^1.5.3",
     "enhanced-resolve": "^5.3.2",
-    "node-fetch": "^2.6.1",
     "node-sass": "^4.14.1",
     "sass-loader": "^9.0.3"
   }
