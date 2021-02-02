@@ -14,15 +14,17 @@
     "build": "vuepress build"
   },
   "license": "MIT",
+  "dependencies": {
+    "@apollo/client": "^3.2.5",
+    "react": "^16.14.0",
+    "vue-apollo": "^3.0.5",
+    "graphql": "^15.3.0"
+  },
   "devDependencies": {
     "vuepress": "^1.5.3",
-    "@apollo/client": "^3.2.5",
     "enhanced-resolve": "^5.3.2",
-    "graphql": "^15.3.0",
     "node-fetch": "^2.6.1",
     "node-sass": "^4.14.1",
-    "react": "^16.14.0",
-    "sass-loader": "^9.0.3",
-    "vue-apollo": "^3.0.5"
+    "sass-loader": "^9.0.3"
   }
 }
