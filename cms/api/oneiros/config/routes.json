@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/oneiros",
+      "handler": "oneiros.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/oneiros/count",
+      "handler": "oneiros.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/oneiros/:id",
+      "handler": "oneiros.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/oneiros",
+      "handler": "oneiros.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/oneiros/:id",
+      "handler": "oneiros.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/oneiros/:id",
+      "handler": "oneiros.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
