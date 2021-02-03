@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "rooms",
   "info": {
-    "name": "Room"
+    "name": "Room",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -12,6 +13,9 @@
   "attributes": {
     "Name": {
       "type": "string"
+    },
+    "Oneiroi": {
+      "collection": "oneiros"
     },
     "Background": {
       "model": "file",
@@ -23,9 +27,6 @@
       ],
       "plugin": "upload",
       "required": false
-    },
-    "Oneiroi": {
-      "collection": "oneiros"
     }
   }
 }

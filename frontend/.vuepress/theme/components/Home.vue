@@ -3,7 +3,7 @@
     class="home"
     aria-labelledby="main-title"
   >
-    <header class="hero">
+<!--     <header class="hero">
       <img
         v-if="data.heroImage"
         :src="$withBase(data.heroImage)"
@@ -34,8 +34,8 @@
         />
       </p>
     </header>
-
-    <div
+ -->
+<!--     <div
       v-if="data.features && data.features.length"
       class="features"
     >
@@ -51,22 +51,22 @@
       <div class="feature vid" >
         <iframe class="youtubeFrame" width="560" height="315" src="https://www.youtube.com/embed/KLkjZ9Rwm30" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div class="feature" >
-    </div>
+    </div> -->
 
     <Content class="theme-default-content custom" />
 
-    <div
+<!--     <div
       v-if="data.footer"
       class="footer"
     >
       {{ data.footer }}
-    </div>
+    </div> -->
   </main>
 </template>
 
 <script>
 import NavLink from '@theme/components/NavLink.vue'
-import gql from 'graphql-tag';
+// import gql from 'graphql-tag';
 // import axios from 'axios'
 
 export default {
@@ -88,18 +88,22 @@ export default {
     //   })
     // },
 
-  apollo: {
-    // Simple query that will update the page content
-      attorneys: {
-        query: gql`query {
-            rooms {
-              id
-              Name
-            }
-        }`,
-        prefetch: false
-      }
-  },
+  // apollo: {
+  //   // Simple query that will update the page content
+  //     rooms: {
+  //       query: gql`query {
+  //           rooms {
+  //             id
+  //             Name
+  //             Oneiroi {
+  //               id
+  //               Name
+  //             }
+  //           }
+  //       }`,
+  //       prefetch: false
+  //     }
+  // },
 
     computed: {
     data () {

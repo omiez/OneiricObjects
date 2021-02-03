@@ -33,6 +33,7 @@ module.exports = {
     docsDir: '',
     editLinkText: '',
     lastUpdated: false,
+    logo: '/logo.png',
     nav: [
       {
         text: 'Guide',
