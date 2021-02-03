@@ -24,8 +24,8 @@
       </div>
         <div id="Top" style="height: 0.4px">.</div>
         <div class="room-bg" v-if="rooms != null" :style="bgStyle">
-          <span @click="openSlider({Name: 'Cigarette'})"><router-link to="#Films">
-          <img src="https://oneiric-objects.s3.eu-central-1.amazonaws.com/cigarette_oneiric_9dbb681197.png" class="img-cig">
+          <span @click="openSlider({Name: 'Umbrella'})"><router-link to="#Films">
+          <img class="img-cig" src="https://oneiric-objects.s3.eu-central-1.amazonaws.com/umbrella_oneric_387d6aeef6.png">
           </router-link></span>
         </div>
       <FilmsContainer v-if="selectedOneirios.Name != 'none'" :Oneirios="selectedOneirios" id="Films"/>
@@ -183,11 +183,13 @@ export default {
   .room-bg
     width: 100%
     position relative
-  .img-cig
-    position fixed
-    left 116px
-    width 150px
-    bottom 230px
+  .img-cig {
+    position: fixed;
+    right: -25px;
+    width: 350px;
+    bottom: -57px;
+    transform: rotate(300deg);
+  }
   .img-cig:hover
     filter: drop-shadow(7px 7px 7px rgba(255, 255, 255, 0.5));
   .cloged .room-bg, .vid-open .room-bg
