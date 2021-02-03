@@ -3,6 +3,7 @@
  *
  * https://v1.vuepress.vuejs.org/guide/basic-config.html#app-level-enhancements
  */
+import './styles/fonts.css'
 
 import { ApolloClient, InMemoryCache, HttpLink, ApolloLink } from '@apollo/client';
 
@@ -47,5 +48,5 @@ export default ({
   // ...apply enhancements for the site.
   Vue.use(VueApollo);
   options.apolloProvider = apolloProvider;
-  router.mode = 'history';
+  // router.mode = 'history';
 }

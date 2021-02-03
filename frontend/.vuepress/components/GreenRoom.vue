@@ -28,7 +28,7 @@
           <img :src="baseUrl + '/uploads/cigarette_oneiric_2beed38b6a.png'" class="img-cig">
           </router-link></span>
         </div>
-      <FilmsContainer v-if="selectedOneirios.Name != ''" :Oneirios="selectedOneirios" id="Films"/>
+      <FilmsContainer v-if="selectedOneirios.Name != 'none'" :Oneirios="selectedOneirios" id="Films"/>
     </div>
 <!--   <main
     class="home"
@@ -148,7 +148,7 @@ export default {
     // Simple query that will update the page content
       rooms: {
         query: gql`query {
-            rooms(where: { Name: "BlueRoom" }) {
+            rooms(where: { Name: "GreenRoom" }) {
               id
               Name
               Background {

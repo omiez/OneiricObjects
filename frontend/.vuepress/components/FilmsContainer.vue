@@ -1,13 +1,14 @@
   <template>
     <div class="films-slider">
-      <h1 class="film-title">Orange at <span>The Grifters</span></h1>
+      <h1 class="film-title">{{Oneirios.Name}} at <span>The Film</span></h1>
     <div  class="films-wrapper">
+      <a  v-for="film in films" style="cursor: pointer;">
       <img
+        @click="openvideo(film)"
         class="film-cover"
-        v-for="i in 12"
-        :key="i"
-        :src="baseUrl + '/uploads/the_breakfast_club_029a0d3995.png'"
-        ></img>
+        :key="film.Title"
+        :src="baseUrl + film.Cover.url"
+        ></img></a>
     </div>
     </div>
 <!--   <main
@@ -81,9 +82,34 @@ import gql from 'graphql-tag';
 // import axios from 'axios'
 
 export default {
-  props: ['films', 'oneiros'],
+  props: ['Oneirios'],
   name: 'FilmsContainer',
-
+    apollo: {
+    // Simple query that will update the page content
+      films: {
+        query: gql`query ($oneiros: String!) {
+            films(where: { Oneiroi: { Name: $oneiros } } ) {
+              id
+              Title
+              Cover {
+                url
+              }
+              Oneiroi{
+                Name
+                Image {
+                  url
+                }
+              }
+            }
+        }`,
+        variables(){
+          return {
+            oneiros: this.Oneirios.Name
+          }
+        },
+        prefetch: false
+      }
+  },
 
     // data() {
     //   return {
@@ -108,6 +134,15 @@ export default {
     baseUrl () {
       return process.env.BACKEND_URL || '';
     }
+  },
+  methods: {
+    openvideo(film) {
+      this.$parent.isSliderOpen = false;
+        // this.$router.push('#Top')
+      this.$parent.isVideoOpen = true;
+      this.$parent.selectedFilm = film;
+      this.$router.push('#Top')
+    }
   }
 }
 </script>
@@ -118,13 +153,14 @@ export default {
     flex-wrap wrap
     justify-content space-between
   .film-cover
-      width 24.922vw
+      width 24.660vw
       height 27vh
-      border solid red 0.3px
+      border solid rgba(55, 255, 48, 1) 2px
   .films-slider
-    background transparent
+    color rgba(55, 255, 48, 1)
     position relative
   .film-title
     position absolute
     top -65px
+  
 </style>
