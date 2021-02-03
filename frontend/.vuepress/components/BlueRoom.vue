@@ -185,9 +185,9 @@ export default {
     position relative
   .img-cig
     position fixed
-    left 116px
-    width 150px
-    bottom 230px
+    right 277px
+    width 630px
+    bottom 93px
   .img-cig:hover
     filter: drop-shadow(7px 7px 7px rgba(255, 255, 255, 0.5));
   .cloged .room-bg, .vid-open .room-bg
