@@ -24,8 +24,8 @@
       </div>
         <div id="Top" style="height: 0.4px">.</div>
         <div class="room-bg" v-if="rooms != null" :style="bgStyle">
-          <span @click="openSlider({Name: 'Cigarette'})"><router-link to="#Films">
-          <img :src="baseUrl + '/uploads/cigarette_oneiric_2beed38b6a.png'" class="img-cig">
+          <span @click="openSlider({Name: 'Orange'})"><router-link to="#Films">
+          <img src="https://oneiric-objects.s3.eu-central-1.amazonaws.com/Orange_oneiric_365d61ff0d.png" class="img-cig">
           </router-link></span>
         </div>
       <FilmsContainer v-if="selectedOneirios.Name != 'none'" :Oneirios="selectedOneirios" id="Films"/>
