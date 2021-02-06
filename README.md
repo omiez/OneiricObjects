@@ -1,6 +1,6 @@
 <a href="http://wear-fashion.web.app">![We(a)r](./frontend/.vuepress/public/logo.png?sanitize=true "We(a)r")</a>
 
-Oneiros is a special "dreamy" object the symbols a deeper meaning in a film narrative.
+Oneiros is a special "dreamy" object that symbols a deeper meaning in a film narrative.
 
 This project aims to create an index for these objects.
 
