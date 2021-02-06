@@ -1,4 +1,4 @@
-<a href="http://wear-fashion.web.app">![We(a)r](./frontend/.vuepress/public/logo.png?sanitize=true "We(a)r")</a>
+<a href="http://oneiric-objects.herokuapp.com">![OneiricObjs](./frontend/.vuepress/public/logo.png?sanitize=true "OneiricObjects")</a>
 
 Oneiros is a special "dreamy" object that symbols a deeper meaning in a film narrative.
 
