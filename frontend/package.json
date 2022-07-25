@@ -7,6 +7,10 @@
     "name": "Omer & Ronelle",
     "email": ""
   },
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": ">=6.0.0"
+  },
   "repository": "/oneiric-objects",
   "scripts": {
     "deb": "npm run dev --first=http://localhost:1337",

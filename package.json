@@ -3,6 +3,10 @@
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi+Vuepress application",
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": ">=6.0.0"
+  },
   "scripts": {
     "buildFrontend": "npm i --prefix frontend && npm run build --prefix frontend",
     "buildBackend": "npm i --prefix cms && npm run build --prefix cms && cp -a cms/public/. frontend/.vuepress/dist",
