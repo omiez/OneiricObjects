@@ -14,10 +14,9 @@
     "sqlite3": "^5.0.0"
   },
   "dependencies": {
-    "knex": ">=0.21.1",
-    "objection": ">=2.1.3",
-    "pg": ">=8.0.3",
-    "pg-connection-string": "^2.5.0",
+    "knex": "latest",
+    "pg": "latest",
+    "pg-connection-string": "latest",
     "strapi": "3.4.5",
     "strapi-admin": "3.4.5",
     "strapi-connector-bookshelf": "3.4.5",
