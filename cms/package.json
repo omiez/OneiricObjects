@@ -3,10 +3,6 @@
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
-  "engines": {
-    "node": ">=10.16.0 <=14.x.x",
-    "npm": ">=6.0.0"
-  },
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -18,7 +14,7 @@
     "sqlite3": "^5.0.0"
   },
   "dependencies": {
-    "knex": "<0.21.1",
+    "knex": "<0.20.0",
     "pg": "^8.4.1",
     "pg-connection-string": "^2.4.0",
     "strapi": "3.4.5",
