@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "knex": "<0.21.1",
-    "pg": "^8.4.1",
+    "pg": "^8.0.3",
     "pg-connection-string": "^2.4.0",
     "strapi": "3.4.5",
     "strapi-admin": "3.4.5",
