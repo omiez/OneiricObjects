@@ -14,10 +14,9 @@
     "sqlite3": "^5.0.0"
   },
   "dependencies": {
-    "knex": "latest",
-    "objection": "latest",
-    "pg": "latest",
-    "pg-connection-string": "latest",
+    "knex": "<0.20.0",
+    "pg": "^8.4.1",
+    "pg-connection-string": "^2.4.0",
     "strapi": "3.6.9",
     "strapi-admin": "3.6.9",
     "strapi-connector-bookshelf": "3.6.9",
@@ -36,4 +35,4 @@
     "uuid": "ef6290e3-5184-4d0a-b8ab-db816e614aaf"
   },
   "license": "MIT"  
-} 
+}
