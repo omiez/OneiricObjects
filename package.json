@@ -3,10 +3,6 @@
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi+Vuepress application",
-  "engines": {
-    "node": ">=10.16.0 <=13.x.x",
-    "npm": ">=6.0.0"
-  },
   "scripts": {
     "buildFrontend": "npm i --prefix frontend && npm run build --prefix frontend",
     "buildBackend": "npm i --prefix cms && npm run build --prefix cms && cp -a cms/public/. frontend/.vuepress/dist",
@@ -18,7 +14,6 @@
     "vuepress": "^1.7.1"
   },
   "cacheDirectories": [
-    "frontend/node_modules",
-    "cms/node_modules"
+    "frontend/node_modules"
   ]
 }
