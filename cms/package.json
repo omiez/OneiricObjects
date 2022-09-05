@@ -26,7 +26,9 @@
     "strapi-plugin-graphql": "3.6.9",
     "strapi-plugin-upload": "3.6.9",
     "strapi-plugin-users-permissions": "3.6.9",
-    "strapi-utils": "3.6.9"
+    "strapi-provider-upload-aws-s3": "^3.6.9",
+    "strapi-utils": "3.6.9",
+
   },
   "author": {
     "name": "A Strapi developer"
